@@ -91,7 +91,7 @@ int main(){
             cout<<"Mathematical error"<<endl;
             return 0;
         }
-    
+    //
     for(j=0;j<n;j++){
         if(i!=j){
              ratio = matA[j][i]/matA[i][i];
