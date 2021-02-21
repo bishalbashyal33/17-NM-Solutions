@@ -53,12 +53,15 @@ int main()
 
     do{
         float k = a+i*b;
+        if(i%3==0)
         integration = integration +2*f(k);
+        else
+         integration = integration +3*f(k);
         i=i+1;
 
     }while(i<=h);
 
-    integration = integration + stepsize/2;
+    integration = integration + stepsize*(3/8);
     cout<<"Integration is:"<<integration;
     return 0;
 }
