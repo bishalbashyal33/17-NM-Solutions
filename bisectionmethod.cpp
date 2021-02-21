@@ -70,6 +70,6 @@ int main(){
 }
 
 double f(double x){
-    return pow(x,2) - sin(x) + 3 ;
+    return exp(x) - 4 ;
 }
 

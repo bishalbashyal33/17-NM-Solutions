@@ -65,5 +65,5 @@ int main(){
 }
 
 double f(double x){
-    return pow(x,2) - cos(x);
+    return pow(x,2) - 4*x+3;
 }

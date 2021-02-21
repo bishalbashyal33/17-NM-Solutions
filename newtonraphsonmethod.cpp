@@ -64,9 +64,9 @@ int main(){
 }
 
 double f(double x){
-    return pow(x,2) - cos(x) ;
+    return pow(x,2) - 4*(x) + 3 ;
 }
 
 double df(double x){
-    return 2*x + sin(x);
+    return 2*x - 4;
 }
