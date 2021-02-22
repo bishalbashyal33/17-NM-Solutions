@@ -42,30 +42,41 @@ using namespace std;
 float f(float x);
 int main()
 {
-    float a,b,h;
+    float a,b,h,integration = 0.0,stepsize,k;
+    int i;
     cout<<"Enter lower, upper limit and sub-interval";
     cin>>a>>b>>h;
 
-    float stepsize = (a-b)/h;
-    float integration = f(a)+f(b);
+    stepsize = (b-a)/h;
+    integration = f(a)+f(b);
 
-    int i =1;
 
-    do{
-        float k = a+i*b;
-        if(i%3==0)
-        integration = integration +2*f(k);
-        else
-         integration = integration +3*f(k);
-        i=i+1;
 
-    }while(i<=h);
+       for( i=1; i<= h-1; i++)
+ {
+  float k = a + i*stepsize;
 
-    integration = integration + stepsize*(3/8);
+  if(i%3==0)
+  {
+    integration = integration + 2 * (f(k));
+  }
+  else
+  {
+    integration = integration + 3 * (f(k));
+  }
+ }
+
+    integration = integration *stepsize*(3.0/8.0);
     cout<<"Integration is:"<<integration;
     return 0;
+
 }
+  
+    
+    
+    
+    
 
 float f(float x){
-    return pow(x,2)-cos(x);
+    return pow(2,x)+3;
 }

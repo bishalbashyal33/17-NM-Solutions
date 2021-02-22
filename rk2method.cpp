@@ -3,7 +3,7 @@ using namespace std;
 #include <cmath>
 
 float dyx(float x, float y){
-    return x+y-2;
+    return exp(x)-4*(y);
 }
 
 float rk(float x0,float y0, float x,float h){
@@ -22,7 +22,7 @@ float rk(float x0,float y0, float x,float h){
 }
 
 int main(){
-    float x0 =0,y=5,x=2,h=0.01;
+    float x0 =0,y=9,x=4.1,h=0.5;
     cout<<"Solution is:"<<rk(x0,y,x,h);
     return 0;
 }

@@ -55,5 +55,5 @@ int main()
 }
 
 float f(float x,float y){
-    return pow(x,2)-cos(x)+pow(y,2);
+    return exp(x)-4*y;
 }

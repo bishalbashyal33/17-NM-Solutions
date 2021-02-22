@@ -38,8 +38,9 @@ algorithm:
 
 #include <iostream>
 using namespace std;
+#include <cmath>
 float f(float x, float y){
-    return (x-y)/2;
+    return cos(x)-4*y;
 }
 
 int main(){
