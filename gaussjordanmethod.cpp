@@ -1,7 +1,7 @@
 /*
 Algorithm:
 Start
-
+ 
 2. Input the Augmented Coefficients Matrix (A):
 	
 	For i = 1 to n
