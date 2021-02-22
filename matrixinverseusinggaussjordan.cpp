@@ -69,7 +69,7 @@
 using namespace std;
 #include <cmath>
 
-#define n 3
+#define n 1
 #include <iomanip>
 int main(){
 

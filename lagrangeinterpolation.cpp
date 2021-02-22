@@ -40,9 +40,9 @@ cout<<"Enter number of data"<<endl;
 cin>>n;
 
 for(int i=0;i<n;i++){
-    cout<<'x'<<i;
+    cout<<'x'<<i<<'=';
     cin>>x[i];
-    cout<<'y'<<i;
+    cout<<'y'<<i<<'=';
     cin>>y[i];
     cout<<endl;
 }
